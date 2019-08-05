@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1564103181 source:d:\ppi\easyform\empleados\src\empleadoporcomision.cpp
+	"EmpleadoPorComision.h"
+	<iostream>
+	<string>
+
+1564103122 d:\ppi\easyform\empleados\include\empleadoporcomision.h
+	<string>
+
+1564103169 source:d:\ppi\easyform\empleados\src\empleadobasemascomision.cpp
+	"EmpleadoBaseMasComision.h"
+	<iostream>
+	<string>
+
+1564103156 d:\ppi\easyform\empleados\include\empleadobasemascomision.h
+	<string>
+	"EmpleadoPorComision.h"
+
+1564103122 source:d:\ppi\easyform\empleados\mainempleados.cpp
+	<iostream>
+	<iomanip>
+	"EmpleadoBaseMasComision.h"
+
