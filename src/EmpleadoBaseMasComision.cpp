@@ -1,5 +1,6 @@
 #include "EmpleadoBaseMasComision.h"
 #include <iostream>
+#include "EmpleadoPorComision.h"
 #include <string>
 using namespace std;
 
@@ -9,16 +10,6 @@ using namespace std;
       : EmpleadoPorComision( nombre, apellido, nss, ventas, tarifa )
     {
       setSalarioBase( salario );
-      cout << "Constructor de EmpleadoBaseMasComision: " << endl;
-       imprimir();
-       cout << endl << endl;
-    }
-
-    EmpleadoBaseMasComision::~EmpleadoBaseMasComision()
-    {
-        cout << "Destructor de EmpleadoBaseMasComision: " << endl;
-       imprimir();
-       cout << endl << endl;
     }
 
     void EmpleadoBaseMasComision::setSalarioBase( double salario)

@@ -11,16 +11,6 @@ using namespace std;
        setVentasBrutas( ventas );
        setTarifaComision( tarifa );
 
-       cout << "Constructor de EmpleadoPorComision: " << endl;
-       imprimir();
-       cout << endl << endl;
-    }
-
-    EmpleadoPorComision::~EmpleadoPorComision()
-    {
-       cout << "Destructor de EmpleadoPorComision: " << endl;
-       imprimir();
-       cout << endl << endl;
     }
 
     void EmpleadoPorComision::setPrimerNombre( const string &nombre )
@@ -80,10 +70,10 @@ using namespace std;
 
     void EmpleadoPorComision::imprimir() const
     {
-        cout << "Empleado por comision: " << primerNombre << " " << apellidoPaterno
-        <<"\nnumero de seguro social: " << numeroSeguroSocial
-        << "\nventas brutas: " << ventasBrutas
-        <<"\ntarifa de comision: " << tarifaComision;
+        cout << "Empleado por comision: " << getPrimerNombre() << " " << getApellidoPaterno()
+        <<"\nnumero de seguro social: " << getNumeroSeguroSocial()
+        << "\nventas brutas: " << getVentasBrutas()
+        <<"\ntarifa de comision: " << getTarifaComision();
     }
 
 

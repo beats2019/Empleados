@@ -8,7 +8,7 @@ class EmpleadoPorComision
     public:
         EmpleadoPorComision( const string &, const string &, const string &
                             , double = 0, double = 0 );
-        ~EmpleadoPorComision();
+
 
         void setPrimerNombre( const string & );
         string getPrimerNombre() const;

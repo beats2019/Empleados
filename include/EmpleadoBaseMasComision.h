@@ -1,8 +1,9 @@
-#ifndef EMPLEADOBASEMASCOMISION_H
-#define EMPLEADOBASEMASCOMISION_H
+#ifndef BASEMAS_H
+#define BASEMAS_H
 #include <string>
 using std::string;
 #include "EmpleadoPorComision.h"
+
 
 class EmpleadoBaseMasComision : public EmpleadoPorComision
 {
@@ -11,7 +12,7 @@ class EmpleadoBaseMasComision : public EmpleadoPorComision
 
     EmpleadoBaseMasComision( const string &, const string &, const string &
                              , double = 0, double = 0, double = 0 );
-    ~EmpleadoBaseMasComision();
+
 
 
     void setSalarioBase( double );

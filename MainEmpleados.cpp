@@ -3,27 +3,39 @@
 using namespace std;
 
 #include "EmpleadoBaseMasComision.h"
+#include "EmpleadoPorComision.h"
 
     int main()
     {
+
+      EmpleadoPorComision empleadoPorComision(
+        "Sue", "Jones", "222-22-2222", 10000, 0.06 );
+
+      EmpleadoPorComision *empleadoPorComisionPtr = 0;
+
+      EmpleadoBaseMasComision empleadoBaseMasComision(
+        "Bob", "Lewis", "333-33-3333", 5000, .04, 300 );
+
+      EmpleadoBaseMasComision *empleadoBaseMasComisionPtr = 0;
+      empleadoBaseMasComisionPtr = &empleadoBaseMasComision;
+
       cout << fixed << setprecision( 2 );
 
-      {
-          EmpleadoPorComision empleado1(
-             "Bob" , "Lewis" , "43094" , 5000, 0.04 );
-      }
+      empleadoBaseMasComisionPtr->imprimir();
 
-      cout << endl;
+      cout << "Impresion de los objetos de clase base y clase derivada: \n\n";
+      empleadoPorComision.imprimir();
+      cout << "\n\n";
 
-      EmpleadoBaseMasComision
-        empleado2( "Lisa", "Jones", "78433123", 2000, .06, 800 );
+      empleadoPorComisionPtr = &empleadoPorComision;
+      empleadoPorComisionPtr->imprimir();
 
-      cout << endl;
-
-      EmpleadoBaseMasComision
-        empleado3( "Mark", "Sands", "435654", 000, .15, 2000 );
-
-       cout << endl;
 
       return 0;
     }
+
+
+
+
+
+
